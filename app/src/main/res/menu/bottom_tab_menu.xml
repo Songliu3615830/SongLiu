@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_tab_bottom_today"
+        android:icon="@drawable/img_tab_today_d"
+        android:title="今天"
+        />
+    <item
+        android:id="@+id/item_tab_bottom_plan"
+        android:icon="@drawable/img_tab_plan_d"
+        android:title="计划"
+        />
+    <item
+        android:id="@+id/item_tab_bottom_report"
+        android:icon="@drawable/img_tab_report_d"
+        android:title="成绩单"
+        />
+    <item
+        android:id="@+id/item_tab_bottom_me"
+        android:icon="@drawable/img_tab_me_d"
+        android:title="我"
+        />
+
+</menu>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <View
+        android:id="@+id/dialog_divider_one"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/colorPrimary"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/colorNone" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/dialog_divider_none"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorNone"
+            />
+
+        <TextView
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="孩子"
+            android:textColor="@color/colorTextBlack"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_divider_none"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/btn_select_close"
+            />
+
+        <Button
+            android:paddingRight="20dp"
+            android:id="@+id/btn_select_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorNone"
+            android:text="确定"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="@color/colorTextBlack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_divider_none"
+            />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cly_boy_setting_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_child_name_setting"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/selector_me_bar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_icon_child"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:focusable="false"
+            android:paddingLeft="15dp"
+            android:src="@drawable/img_avatar_girl1"
+            app:layout_constraintBottom_toBottomOf="@id/btn_child_name_setting"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btn_child_name_setting" />
+
+        <TextView
+            android:id="@+id/txt_child_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:text="还没填名字"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/btn_child_name_setting"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btn_child_name_setting" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/login_icon_enter"
+            app:layout_constraintBottom_toBottomOf="@id/btn_child_name_setting"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btn_child_name_setting" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorDivider"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/colorNone" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="20dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        >
+        <ImageButton
+            android:id="@+id/btn_child_one"
+            android:paddingTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/img_avatar_girl1"
+            android:scaleType="fitCenter"
+            android:background="@color/colorNone"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/img_solider_one"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="7dp"
+            android:src="@drawable/shape_bottom_item_select"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_child_two"
+            android:paddingTop="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="85dp"
+            android:src="@drawable/img_avatar_boy1"
+            android:scaleType="fitCenter"
+            android:background="@color/colorNone"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/img_solider_two"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/shape_bottom_item_select"
+            android:layout_marginStart="82dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_child_three"
+            android:paddingTop="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="160dp"
+            android:src="@drawable/img_avatar_girl2"
+            android:scaleType="fitCenter"
+            android:background="@color/colorNone"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/img_solider_three"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="157dp"
+            android:visibility="gone"
+            android:src="@drawable/shape_bottom_item_select"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_child_four"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="230dp"
+            android:src="@drawable/img_avatar_boy2"
+            android:scaleType="fitCenter"
+            android:background="@color/colorNone"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/img_solider_four"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="229dp"
+            android:visibility="gone"
+            android:src="@drawable/shape_bottom_item_select"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginBottom="30dp"
+        >
+        <Button
+            android:id="@+id/btn_no_alert"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_boy_alert_setting"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+        <Button
+            android:id="@+id/btn_alert_cancel"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="取消"
+            android:visibility="gone"
+            android:textColor="@color/colorActionBar"
+            android:gravity="center"
+            android:background="@drawable/shape_boy_alert_setting"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <Button
+            android:id="@+id/btn_alert_confirm"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="确定"
+            android:visibility="gone"
+            android:textColor="@color/colorActionBar"
+            android:gravity="center"
+            android:background="@drawable/shape_boy_alert_setting"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/txt_no_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="12dp"
+            android:text="不再帮孩子提醒了"
+            android:textColor="@color/colorActionBar"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/img_alert_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:src="@drawable/img_remove_w"
+            app:layout_constraintTop_toTopOf="@+id/txt_no_alert"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_no_alert"
+            app:layout_constraintEnd_toStartOf="@id/txt_no_alert"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+</LinearLayout>

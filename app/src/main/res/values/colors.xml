@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorActionBar">#ffffff</color>
+    <color name="colorBackground">#eeeeee</color>
+    <color name="colorInit">#3D3D3D</color>
+    <color name="colorNone">#00000000</color>
+    <color name="colorDialog">#ffffff</color>
+    <color name="colorItmeSelect">#443F51B5</color>
+    <color name="colorTextBlack">#000000</color>
+    <color name="colorSelectorMeBar">#20000000</color>
+    <color name="colorDivider">#eeeeee</color>
+    <color name="colorTextInit">#000000</color>
+    <color name="colorWhiteGray">#dddddd</color>
+    <color name="colorBoyAlertSetting">#FFF24895</color>
+    <color name="colorReportBad">#EBED3D5A</color>
+    <color name="colorReportGood">#E48CED3D</color>
+    <color name="colorReportSuper">#E41A81B9</color>
+</resources>

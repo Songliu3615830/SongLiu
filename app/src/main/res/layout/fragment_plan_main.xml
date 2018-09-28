@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/divider_plan_bar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cly_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorActionBar"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/img_main"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorNone"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_avatar_g"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_main_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@color/colorNone"
+            android:gravity="bottom"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="@id/img_main"
+            app:layout_constraintStart_toEndOf="@id/img_main"
+            app:layout_constraintTop_toTopOf="@id/img_main" />
+
+        <ImageButton
+            android:id="@+id/img_child_one"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="25dp"
+            android:background="@color/colorNone"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_avatar_boy1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageButton
+            android:id="@+id/img_child_two"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="50dp"
+            android:background="@color/colorNone"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_avatar_girl1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/img_child_one" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_day_drink"
+        style="@style/Base.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/card_foreground"
+        app:layout_constraintTop_toBottomOf="@+id/cly_bar">
+
+        <android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_card_day_drink"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_goal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_card_day_drink_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="每日目标"
+                app:layout_constraintBottom_toBottomOf="@id/img_card_day_drink"
+                app:layout_constraintStart_toEndOf="@id/img_card_day_drink"
+                app:layout_constraintTop_toTopOf="@id/img_card_day_drink" />
+
+            <TextView
+                android:id="@+id/txt_card_day_drink_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:text="1800"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@id/txt_card_day_drink_start"
+                app:layout_constraintStart_toEndOf="@id/txt_card_day_drink_start"
+                app:layout_constraintTop_toTopOf="@id/txt_card_day_drink_start" />
+
+            <TextView
+                android:id="@+id/txt_card_day_drink_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:text="毫升"
+                app:layout_constraintBottom_toBottomOf="@id/txt_card_day_drink_num"
+                app:layout_constraintStart_toEndOf="@id/txt_card_day_drink_num"
+                app:layout_constraintTop_toTopOf="@id/txt_card_day_drink_num" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/divider_plan_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorDivider"
+        android:paddingBottom="8dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="8dp"
+        android:text="提醒"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rly_plan_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="2dp"
+        android:layout_marginBottom="55dp"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

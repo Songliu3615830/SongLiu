@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_name_setting"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="center_vertical"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ToolbarTheme"
+        app:title="填写名字"
+        app:titleTextColor="@color/colorActionBar"
+        app:navigationIcon="@drawable/btn_back"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        >
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/etxt_edit"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="姓名或很酷的昵称"
+        android:maxLength="15"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_name_setting"
+        />
+
+    <TextView
+        android:layout_marginTop="3dp"
+        android:id="@+id/txt_edit_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(0/15)"
+        app:layout_constraintEnd_toEndOf="@id/etxt_edit"
+        app:layout_constraintTop_toBottomOf="@+id/etxt_edit"
+        />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

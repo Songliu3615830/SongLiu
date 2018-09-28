@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">DrinkingAlert</string>
+
+    <string name="alarm_alert_type_zero">无声</string>
+    <string name="alarm_alert_type_one">仅振动</string>
+    <string name="alarm_alert_type_two">仅提示音</string>
+    <string name="alarm_alert_type_three">震动加提示音</string>
+
+    <string name="today_success_top">今天目标已经达成。已经喝水</string>
+    <string name="alert_click_drink">小贴士：喝水可以防眼干，避免视力快速下降</string>
+    <string name="alert_click_success">太棒了！今天目标已经达成！</string>
+    <string name="alert_click_unsuccess">今天距达成目标还有</string>
+    <string name="alert_dialog_cancel_alarm">真的要删除这个提醒吗？</string>
+    <string name="alert_dialog_cancel_cancel_button">取消</string>
+    <string name="alert_dialog_cancel_confirm_button">确定</string>
+
+    <string name="plan_setting_bottom">参考：成人1800毫升，经常运动2500毫升，老人孩子1400毫升</string>
+    <string name="plan_add_alarm">添加提醒</string>
+
+    <string name="report_water_balance_bad"  >水平衡：很差  </string>
+    <string name="report_water_balance_good" >水平衡：健康  </string>
+    <string name="report_water_balance_super">水平横：非常好</string>
+
+    <string name="receiver_action">com.example.sonliu.drinkingalert</string>
+    <string name="notification_title">喝水提醒</string>
+    <string name="notification_content">这点水你都不肯喝？</string>
+    <string name="notification_content_bottom">该喝水啦～</string>
+    <string name="notification_ticker">你要不喝水我就死给你看！</string>
+
+</resources>

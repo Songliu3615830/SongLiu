@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:id="@+id/dialog_divider_one"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/colorPrimary"/>
+
+    <ImageButton
+        android:id="@+id/btn_right_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorNone"
+        android:src="@drawable/img_cup_big"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/btn_drink_right_dialog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_divider_one"
+        app:layout_constraintVertical_bias="0.495" />
+
+    <TextView
+        android:paddingLeft="20dp"
+        android:id="@+id/txt_right_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="750毫升"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="@id/btn_right_dialog"
+        app:layout_constraintTop_toTopOf="@+id/btn_right_dialog" />
+
+    <Button
+        android:paddingLeft="20dp"
+        android:id="@+id/btn_drink_right_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorNone"
+        android:paddingTop="16dp"
+        android:text="点击喝水"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_right_dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.359"
+        app:layout_constraintStart_toStartOf="@id/btn_right_dialog" />
+    
+    <ImageButton
+        android:paddingBottom="20dp"
+        android:paddingRight="20dp"
+        android:id="@+id/btn_modify_right_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_edit_g"
+        android:background="@color/colorNone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/txt_modify_right_dialog"
+        android:paddingTop="5dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="修改杯型"
+        android:textSize="15sp"
+        app:layout_constraintTop_toTopOf="@id/btn_modify_right_dialog"
+        app:layout_constraintEnd_toStartOf="@id/btn_modify_right_dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    
+</android.support.constraint.ConstraintLayout>
